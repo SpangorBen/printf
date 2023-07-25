@@ -28,6 +28,9 @@ int	_check_format(va_list args, char c)
 	case 'i':
 		l += _putnbr(va_arg(args, int));
 		break;
+	case 'b':
+		l += _putnbr(_binary(va_arg(args, int)));
+		break;
 	default:
 		break;
 	}
