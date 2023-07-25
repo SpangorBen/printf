@@ -26,7 +26,7 @@
 			justifier_func(value, format, count); \
 	}
 
-#define ABS(x) ((x) < 0 ? -(x) : (x))
+#define ABS(x) ((x) <= 0 ? -(x) : (x))
 
 #define UNUSED(x) (void)(x)
 
