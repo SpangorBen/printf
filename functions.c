@@ -64,7 +64,7 @@ int	_putnbr(int n)
 	nbr = n;
 	if (nbr < 0)
 	{
-		ft_putchar('-');
+		_putchar('-');
 		nbr = -nbr;
 	}
 	if (nbr > 9)
@@ -74,7 +74,7 @@ int	_putnbr(int n)
 	}
 	else
 	{
-		ft_putchar(nbr + '0');
+		_putchar(nbr + '0');
 	}
-	return (ft_count(n));
+	return (_count(n));
 }

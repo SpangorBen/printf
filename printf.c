@@ -17,7 +17,7 @@ int	_check_format(va_list args, char c)
 		l += _putchar(va_arg(args, int));
 		break;
 	case 's':
-		l += _putstr(va_arg(args, const char *));
+		l += _putstr(va_arg(args, char *));
 		break;
 	case '%':
 		l += _putchar('%');
@@ -59,4 +59,9 @@ int _printf(const char *format, ...)
 		i++;
 	}
 	return (len);
+}
+
+int main()
+{
+	_printf("ab %c", "c");
 }
