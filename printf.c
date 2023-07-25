@@ -60,8 +60,3 @@ int _printf(const char *format, ...)
 	}
 	return (len);
 }
-
-int main()
-{
-	_printf("ab %c", "c");
-}
